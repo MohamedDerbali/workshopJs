@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .attribute{
+            font-size: large;
+            font-weight: bold;
+        }
+        .inputs{
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <a onclick="wait()" target="_blank">go to esprit website</a>
+    
+    <input type="text" name="nom" id="nom" class="nom" value="ali" placeholder="write your name here...">
+    <div id="content"></div>
+    <table border="2">
+        <thead>
+            <th>key</th>
+            <th>value</th>
+        </thead>
+        <tbody id="tableRow">
+        </tbody>
+    </table>
+    <br/>
+    <button onclick="sayHello()">say Hello click me</button>
+    <button id="btn">say Hello hover me</button>
+    <button id="btn2">say goodbye leave me</button>
+    <br/><br/><br/>
+    <h1>Form</h1>
+    <form>
+        <label class="attribute">nom</label>
+        <input type="text" class="inputs" placeholder="write your lastname here...">
+        <br/>
+        <label class="attribute">prenom</label>
+        <input type="text" class="inputs" placeholder="write your lastname here...">
+        <br/>
+        <label class="attribute">age</label>
+        <input type="number" class="inputs" placeholder="write your lastname here..."><br/>
+        <label class="attribute">gender:</label>
+        <div>
+            <input type="radio" id="gender" name="gender" value="M">
+            <label >M</label>
+          </div>
+      
+          <div>
+            <input type="radio" id="gender" name="gender" value="F">
+            <label>F</label>
+          </div>
+    
+        <p id="error"></p>
+        <button type="submit" id="btnValidate">send</button>
+    </form>
+    <script src="./script.js">
+    </script>
+</body>
+
+</html>
